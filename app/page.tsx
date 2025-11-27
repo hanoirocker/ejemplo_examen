@@ -104,6 +104,22 @@ export default function Home() {
             </select>
           </div>
 
+          {/* Message input */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700">
+              Mensaje
+            </label>
+            <input
+              name="message"
+              type="message"
+              value={form.message}
+              onChange={HandleChange}
+              disabled={status === 'loading'}
+              className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+              required
+            />
+          </div>
+
           {/* Boton de Summit */}
           <button
             type="submit"
